@@ -1,7 +1,7 @@
 # SIVA & HERB OILS
 project link https://ecommerceoil.netlify.app/
 ## 🌿 About the Project
-![Uploading Screenshot 2026-09-16 134841.png…]()
+<img width="1920" height="3788" alt="Screenshot 2026-09-16 134841" src="https://github.com/user-attachments/assets/56dffae5-1b9c-4993-9e1d-58c25e051aee" />
 
 **SIVA & HERB OILS** is a modern natural-oil and herbal products website designed to showcase premium oils made with botanical ingredients and traditional inspiration.
 
@@ -62,8 +62,9 @@ SIVA-HERB-OILS/
 │   └── type of oils.jpg
 │
 └── README.md
-```
-
+# home page
+![Uploading Screenshot 2026-09-16 134841.png…]()
+#shop
 ---
 
 ## 🧴 Products
