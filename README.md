@@ -7,7 +7,8 @@ project link https://ecommerceoil.netlify.app/
 
 The website provides a clean, elegant, and responsive shopping experience for customers to explore products, learn about the brand, and discover natural hair and body care oils.
 
----
+---![Uploading Screenshot 2026-09-16 135519.png…]()
+
 
 ## ✨ Features
 
