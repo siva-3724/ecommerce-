@@ -63,12 +63,10 @@ SIVA-HERB-OILS/
 │
 └── README.md
 # about page
-<img width="1920" height="4080" alt="Screenshot 2026-09-16 135519" src="https://github.com/user-attachments/assets/d59d02be-7d93-49b7-871f-b1bf1f562944" />
-
+<img width="1920" height="4080" alt="Screenshot 2026-09-16 135519" src="https://github.com/user-attachments/assets/5410c69c-df96-4c22-91ef-3609779681c0" />
 
 #shop
-<img width="1920" height="4278" alt="Screenshot 2026-09-16 135623" src="https://github.com/user-attachments/assets/3891e065-866f-4d58-bad9-b1bc8a5b5416" />
-
+<img width="1920" height="4278" alt="Screenshot 2026-09-16 135623" src="https://github.com/user-attachments/assets/ff7235dd-11f5-4f61-9b71-7ac625352e7b" />
 
 ## 🧴 Products
 
