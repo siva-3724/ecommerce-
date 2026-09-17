@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>add to card</title>
   <link rel="stylesheet" href="add to card.css">
+  <link rel="stylesheet" href="style.css">
 
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
@@ -16,6 +17,43 @@
 </head>
 
 <body>
+   <header class="site-header">
+    <div class="container nav">
+
+      <!-- Mobile Menu -->
+      <button class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">
+        ☰
+      </button>
+
+      <!-- Logo -->
+      <a href="#home" class="brand">
+        SIVA & HERB OILS
+      </a>
+
+      <!-- Navigation -->
+      <nav id="navLinks">
+        <a class="active" href="index.html">Home</a>
+        <a href="seller.html">About Us</a>
+        <a href="catalog.html">Shop</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+
+        
+
+        <a href="add to card .html">
+          <button>
+          🛒
+          <span>3</span>
+        </button>
+        </a>
+
+      </div>
+
+    </div>
+  </header>
   <header class="header">
     <div class="icon-btn">
       <button type="button">
@@ -68,12 +106,12 @@
                   </div>
                   <h6 class="text-success">Free shipping</h6>
                   <div class="d-flex flex-column mt-4">
-                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm"
-                      type="button">Details</button>
-                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm mt-2"
+                    <a href="p1.html"><button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm"
+                      type="button">Details</button></a>
+                   <a href="add to card .html"><button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm mt-2"
                       type="button">
                       Add to wishlist
-                    </button>
+                    </button></a>
                   </div>
                 </div>
               </div>
@@ -120,7 +158,7 @@
                   </div>
                   <h6 class="text-success">Free shipping</h6>
                   <div class="d-flex flex-column mt-4">
-                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm"
+                    <a href="p2.html"><button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm"
                       type="button">Details</button>
                     <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm mt-2"
                       type="button">
@@ -174,7 +212,7 @@
                   </div>
                   <h6 class="text-success">Free shipping</h6>
                   <div class="d-flex flex-column mt-4">
-                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm"
+                    <a href="p3.html"><button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm"
                       type="button">Details</button>
                     <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm mt-2"
                       type="button">
@@ -190,5 +228,6 @@
     </div>
   </section>
 </body>
+<script src="script.js"></script>
 
 </html>

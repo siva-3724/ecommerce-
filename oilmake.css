@@ -17,6 +17,22 @@ body {
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
+ .topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #081e02;
+  font-size: 17px;
+  border: solid 1px black;
+  cursor: pointer;
+}
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: solid 1px black;
+}
 
 
     /* HERO */

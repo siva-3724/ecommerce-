@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
@@ -26,7 +27,22 @@
     /* =========================
        TOP BAR
     ========================= */
-
+  .topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #081e02;
+  font-size: 17px;
+  border: solid 1px black;
+  cursor: pointer;
+}
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: solid 1px black;
+}
     .top-bar {
       background: #293426;
       color: #fff;
@@ -681,14 +697,14 @@
 
       <!-- Navigation Actions -->
       <div class="nav-actions">
-        <button class="icon-btn" aria-label="Search">
-          ⌕
-        </button>
-
-        <button class="icon-btn" aria-label="Account">
-          ♙
-        </button>
-
+       <div class="topnav">
+          <div class="search-container">
+            <form action="">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
          <a href="add to card .html">
                 <button>
                   🛒<span>3</span>

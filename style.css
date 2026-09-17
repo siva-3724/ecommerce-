@@ -814,30 +814,6 @@ button {
 
 /* Cart */
 
-.site-header .cart {
-  position: relative;
-}
-
-.site-header .cart span {
-  position: absolute;
-
-  top: -2px;
-  right: -3px;
-
-  width: 15px;
-  height: 15px;
-
-  display: grid;
-  place-items: center;
-
-  border-radius: 50%;
-
-  background: var(--green);
-  color: #fff;
-
-  font-size: 9px;
-  font-weight: 600;
-}
 
 /* Mobile Button */
 
@@ -881,11 +857,7 @@ button {
     margin: auto;
   }
 
-  /* Hide Search On Mobile */
-
-  .site-header .nav-actions .icon-btn:first-child {
-    display: none;
-  }
+ 
 
   .site-header .nav-actions {
     margin-left: auto;
@@ -938,6 +910,7 @@ button {
 
     text-align: left;
   }
+
 
   /* No Active Line */
 
@@ -1115,6 +1088,31 @@ button {
   border-radius: 50%;
   font-size: 17px;
 }
+ button {
+      padding: 11px 22px;
+      background-color: #062304;
+      color: white;
+      border: solid 1px black;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #081e02;
+  font-size: 17px;
+  border: solid 1px black;
+  cursor: pointer;
+}
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: solid 1px black;
+}
 
 /*-----morquee---*/
 .marquee-section {
@@ -1135,7 +1133,7 @@ button {
   display: flex;
   align-items: center;
   width: max-content;
-  animation: marqueeMove 28s linear infinite;
+  animation: marqueeMove 5s linear infinite;
 }
 
 .marquee-track span {
