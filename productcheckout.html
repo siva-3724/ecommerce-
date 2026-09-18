@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="style.css">
-    <style>
+  <style>
     * {
       box-sizing: border-box;
       margin: 0;
@@ -31,8 +32,6 @@
     .header h1 {
       font-size: 24px;
     }
-
-
 
     .checkout-container {
       width: 90%;
@@ -181,7 +180,7 @@
       color: #777;
       font-size: 13px;
     }
-    
+
 
     @media (max-width: 768px) {
       .checkout-container {
@@ -202,7 +201,7 @@
 
 <body>
   <!--navbar-->
-    <header class="site-header">
+  <header class="site-header">
     <div class="container nav">
 
       <!-- Mobile Menu -->
@@ -224,7 +223,7 @@
       </nav>
 
       <!-- Navigation Actions -->
-        <div class="nav-actions">
+      <div class="nav-actions">
 
         <!-- Search -->
         <div class="search-container">
@@ -254,195 +253,189 @@
       </div>
 
     </div>
- 
-  <header class="header">
-    
-    <n type="">
-                <a href="p1.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#5985E1">
-                        <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
-                    </svg>
-                </a>
-              </n>
 
-       <h1>Product Checkout</h1>
-   
-  </header>
+    <header class="header">
 
-  <main class="checkout-container">
+      <n type="">
+        <a href="p1.html">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5985E1">
+            <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+          </svg>
+        </a>
+      </n>
 
-    <!-- Left Section -->
-    <section>
+      <h1>Product Checkout</h1>
 
-      <!-- Customer Details -->
-      <div class="card">
-        <h2>Customer Details</h2>
+    </header>
 
-        <div class="form-row">
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" placeholder="siva" />
-          </div>
+    <main class="checkout-container">
 
-          <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" placeholder="prasath" />
-          </div>
+      <!-- Left Section -->
+      <section>
 
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="sivaprasath@gamil.com" />
-          </div>
+        <!-- Customer Details -->
+        <div class="card">
+          <h2>Customer Details</h2>
 
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" placeholder="+91 9345668970" />
-          </div>
-        </div>
-      </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="siva" />
+            </div>
 
-      <!-- Shipping Address -->
-      <div class="card">
-        <h2>Shipping Address</h2>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="prasath" />
+            </div>
 
-        <div class="form-row">
-          <div class="form-group full">
-            <label for="address">Street Address</label>
-            <input type="text" id="address" placeholder="205 2nd Street" />
-          </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="sivaprasath@gamil.com" />
+            </div>
 
-          <div class="form-group">
-            <label for="city">City</label>
-            <input type="text" id="city" placeholder="salem" />
-          </div>
-
-          <div class="form-group">
-            <label for="state">State</label>
-            <select id="state">
-              <option value="">Select State</option>
-              <option>Tamil Nadu</option>
-              <option>Karnataka</option>
-              <option>Kerala</option>
-              <option>Maharashtra</option>
-              <option>Telangana</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="zip">PIN Code</label>
-            <input type="text" id="zip" placeholder="636636" />
-          </div>
-
-          <div class="form-group">
-            <label for="country">Country</label>
-            <select id="country">
-              <option>India</option>
-              <option>United States</option>
-              <option>United Kingdom</option>
-            </select>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+91 9345668970" />
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Payment -->
-      <div class="card">
-        <h2>Payment Method</h2>
+        <!-- Shipping Address -->
+        <div class="card">
+          <h2>Shipping Address</h2>
 
-        <label class="payment-option">
-          <input type="radio" name="payment" value="card" checked />
-          Credit / Debit Card
-          <div class="icon-container">
-             <div class="payments">
-          <span style="background-color: #1d4ed8; color: white;">VISA</span>
-          <span style="background-color: rgb(244, 121, 32); color: white;">RuPay</span>
-           </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label for="address">Street Address</label>
+              <input type="text" id="address" placeholder="205 2nd Street" />
+            </div>
 
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="salem" />
+            </div>
+
+            <div class="form-group">
+              <label for="state">State</label>
+              <select id="state">
+                <option value="">Select State</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Maharashtra</option>
+                <option>Telangana</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="zip">PIN Code</label>
+              <input type="text" id="zip" placeholder="636636" />
+            </div>
+
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country">
+                <option>India</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+              </select>
+            </div>
           </div>
-
-        </label>
-
-        <label class="payment-option">
-          <input type="radio" name="payment" value="upi" />
-          UPI
-          <div class="icon-container">
-             <div class="payments">
-          <span style="background-color: gray; color: white;">G Pay</span>
-          <span style="background-color: rgb(49, 170, 240); color: white;">Patm</span>
-           </div>
-            
-
-
-          </div>
-
-        </label>
-
-        <label class="payment-option">
-          <input type="radio" name="payment" value="cod" />
-          Cash on Delivery
-          <div class="icon-container">
-            <div class="payments">
-          <span style="background-color: gray; color: white; font-size: 20px;">₹</span>
-          
-          <span style="background-color: gray; color: rgb(29, 248, 36); font-size: 20px;">$</span>
-           </div>
-            
-          </div>
-        </label>
-      </div>
-
-    </section>
-
-    <!-- Right Section -->
-    <aside>
-
-      <div class="card">
-        <h2>Order Summary</h2>
-
-        <div class="product">
-          <img src="assets/product-1.jpg" alt="Product" />
-
-          <div class="product-info">
-            <h3>Cold Pressed Coconut Oil</h3>
-            <p>Quantity: 1</p>
-          </div>
-
-          <span class="price">₹299</span>
         </div>
 
-        <div class="summary-row">
-          <span>Subtotal</span>
-          <span>₹299</span>
+        <!-- Payment -->
+        <div class="card">
+          <h2>Payment Method</h2>
+
+          <label class="payment-option">
+            <input type="radio" name="payment" value="card" checked />
+            Credit / Debit Card
+            <div class="icon-container">
+              <div class="payments">
+                <span style="background-color: #1d4ed8; color: white;">VISA</span>
+                <span style="background-color: rgb(244, 121, 32); color: white;">RuPay</span>
+              </div>
+
+            </div>
+
+          </label>
+
+          <label class="payment-option">
+            <input type="radio" name="payment" value="upi" />
+            UPI
+            <div class="icon-container">
+              <div class="payments">
+                <span style="background-color: gray; color: white;">G Pay</span>
+                <span style="background-color: rgb(49, 170, 240); color: white;">Patm</span>
+              </div>
+            </div>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="payment" value="cod" />
+            Cash on Delivery
+            <div class="icon-container">
+              <div class="payments">
+                <span style="background-color: gray; color: white; font-size: 20px;">₹</span>
+
+                <span style="background-color: gray; color: rgb(29, 248, 36); font-size: 20px;">$</span>
+              </div>
+
+            </div>
+          </label>
         </div>
 
-        <div class="summary-row">
-          <span>Shipping</span>
-          <span>₹10</span>
+      </section>
+
+      <!-- Right Section -->
+      <aside>
+
+        <div class="card">
+          <h2>Order Summary</h2>
+
+          <div class="product">
+            <img src="assets/product-1.jpg" alt="Product" />
+
+            <div class="product-info">
+              <h3>Cold Pressed Coconut Oil</h3>
+              <p>Quantity: 1</p>
+            </div>
+
+            <span class="price">₹299</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span>₹299</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span>₹10</span>
+          </div>
+
+
+
+          <div class="summary-row total">
+            <span>Total</span>
+            <span>₹319</span>
+          </div>
+
+          <button class="place-order" onclick="placeOrder()">
+            Place Order
+          </button>
+
+          <p class="secure">
+            🔒 Secure checkout · Your payment is protected
+          </p>
         </div>
 
+      </aside>
 
-
-        <div class="summary-row total">
-          <span>Total</span>
-          <span>₹319</span>
-        </div>
-
-        <button class="place-order" onclick="placeOrder()">
-          Place Order
-        </button>
-
-        <p class="secure">
-          🔒 Secure checkout · Your payment is protected
-        </p>
-      </div>
-
-    </aside>
-
-  </main>
+    </main>
 
 
 
 </body>
-<script
- src="script.js"></script>
+<script src="script.js"></script>
+
 </html>
