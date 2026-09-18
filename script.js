@@ -34,3 +34,5 @@ navLinks.querySelectorAll("a").forEach(link => {
 
       alert("Order placed successfully!");
     }
+
+    

@@ -16,11 +16,9 @@
 /* =========================================================
    BACKGROUND SHAKING LEAVES
  ========================================================= */
-
 .site-loader {
     overflow: hidden;
 }
-
 /* Background leaf common style */
 .loading-leaf {
     position: absolute;
@@ -80,33 +78,23 @@
         leafShake4 5s ease-in-out infinite,
         leafFloat4 8s ease-in-out infinite;
 }
-
-
 .leaf-5 {
     top: 45%;
     left: 3%;
-
     font-size: 45px;
-
     opacity: 0.08;
-
     animation:
         leafShake5 3.5s ease-in-out infinite;
 }
 
-
 .leaf-6 {
     top: 55%;
     right: 4%;
-
     font-size: 50px;
-
     opacity: 0.08;
-
     animation:
         leafShake6 4s ease-in-out infinite;
 }
-
 
 /* Keep loader content above leaves */
 
@@ -114,14 +102,11 @@
     position: relative;
     z-index: 10;
 }
-
-
 /* =========================================================
    SHAKE ANIMATIONS
    ========================================================= */
 
 @keyframes leafShake1 {
-
     0%,
     100% {
         transform: rotate(-25deg);
@@ -712,14 +697,12 @@ button {
   width: min(var(--max), calc(100% - 44px));
   height: 100%;
   margin: auto;
-
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
 /* Logo */
-
 .site-header .brand {
   flex-shrink: 0;
   font-family: "Playfair Display", serif;
@@ -746,14 +729,11 @@ button {
   position: relative;
 
   padding: 10px 0;
-
   font-size: 12px;
   font-weight: 600;
   color: #373034;
-
   white-space: nowrap;
   text-decoration: none;
-
   transition: color 0.3s ease;
 }
 
@@ -764,22 +744,14 @@ button {
   text-decoration: underline;
   text-underline-offset: 6px;
 }
-
-
 /* Remove Active Underline */
-
 .site-header nav a.active::after {
   display: none !important;
   content: none !important;
 }
-
-/* Navigation Actions */
-
-
 /* =====================================
    NAV ACTIONS
 ===================================== */
-
 .nav-actions {
   display: flex;
   align-items: center;
@@ -788,31 +760,22 @@ button {
 
   flex-shrink: 0;
 }
-
-
 /* =====================================
    SEARCH
 ===================================== */
-
 .search-container {
   display: flex;
   align-items: center;
 }
-
 .search-form {
   width: 210px;
   height: 40px;
-
   display: flex;
   align-items: center;
-
   border: 1px solid #ddd;
   border-radius: 25px;
-
   background: #fff;
-
   overflow: hidden;
-
   transition: 0.3s ease;
 }
 
@@ -822,130 +785,83 @@ button {
   box-shadow:
     0 0 0 3px rgba(138, 43, 226, 0.10);
 }
-
-
 /* Search input */
-
 .search-form input {
   width: 100%;
   height: 100%;
-
   padding: 0 13px;
-
   border: none;
   outline: none;
-
   background: transparent;
-
   color: #333;
   font-size: 14px;
 }
-
 .search-form input::placeholder {
   color: #999;
 }
-
-
 /* Search button */
-
 .search-form button {
   width: 42px;
   height: 40px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: none;
-
   background: transparent;
-
   color: #555;
-
   cursor: pointer;
-
   transition: 0.3s ease;
 }
 
 .search-form button:hover {
   color: blueviolet;
 }
-
-
 /* =====================================
    CART
 ===================================== */
-
 .cart-link {
   position: relative;
-
   width: 42px;
   height: 42px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
   background: #f7f1fb;
-
   color: #333;
-
   text-decoration: none;
-
   transition: all 0.3s ease;
 }
-
-
 /* Cart icon */
-
 .cart-link i {
   font-size: 17px;
 }
-
-
 /* Cart hover */
-
 .cart-link:hover {
   background:  #2C4A3E;
   color: #fff;
-
   transform: translateY(-2px);
 }
-
-
 /* =====================================
    CART COUNT
 ===================================== */
 
 .cart-count {
   position: absolute;
-
   top: -5px;
   right: -5px;
-
   width: 19px;
   height: 19px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
   background: #c69d36;
   color: #fff;
-
   font-size: 10px;
   font-weight: 700;
-
   border: 2px solid #fff;
 }
-
-
-
-
 /* =====================================
    MOBILE
 ===================================== */
@@ -961,10 +877,8 @@ button {
   .search-form {
     width: 42px;
     height: 42px;
-
     border: none;
     border-radius: 50%;
-
     background: #f7f1fb;
   }
 
@@ -975,7 +889,6 @@ button {
   .search-form button {
     width: 42px;
     height: 42px;
-
     color: #333;
   }
 
@@ -984,24 +897,19 @@ button {
   }
 
   /* Cart */
-
   .cart-link {
     width: 42px;
     height: 42px;
   }
 }
-
-
 /* =====================================
    SMALL MOBILE
 ===================================== */
 
 @media (max-width: 480px) {
-
   .nav-actions {
     gap: 6px;
   }
-
   .search-form,
   .search-form button,
   .cart-link {
@@ -1020,118 +928,79 @@ button {
   .cart-count {
     width: 17px;
     height: 17px;
-
     top: -4px;
     right: -4px;
-
     font-size: 9px;
   }
 }
-
-
 /* Mobile Button */
 
 .site-header .mobile-menu {
   display: none;
 }
-
-
 /* ==============================
    MOBILE
 ================================ */
 
 @media (max-width: 760px) {
-
   .site-header {
     height: 58px;
   }
-
   .site-header .nav {
     width: min(100% - 24px, 520px);
     gap: 10px;
   }
-
   /* Menu Button */
-
   .site-header .mobile-menu {
     display: grid;
-
     width: 35px;
     height: 35px;
-
     flex-shrink: 0;
-
     font-size: 20px;
   }
-
   /* Logo */
-
   .site-header .brand {
     font-size: 18px;
     margin: auto;
   }
-
- 
-
   .site-header .nav-actions {
     margin-left: auto;
     gap: 3px;
   }
-
   /* Mobile Navigation */
-
   .site-header nav {
     position: absolute;
-
     top: 58px;
     left: 0;
     right: 0;
-
     width: 100%;
-
     display: none;
-
     flex-direction: column;
     align-items: stretch;
-
     gap: 0;
-
     margin: 0;
-
     background: #fff;
-
     z-index: 9999;
   }
-
   /* Open Menu */
-
   .site-header nav.open {
     display: flex;
   }
 
   /* Mobile Links */
-
   .site-header nav a {
     width: 100%;
-
     padding: 14px 24px;
-
     font-size: 12px;
-
     border: none !important;
-
     text-align: left;
   }
-
-
   /* No Active Line */
-
   .site-header nav a.active::after {
     display: none !important;
   }
 
 }
-
 .nav-links a:hover {
   text-decoration: underline;
   text-underline-offset: 6px;
@@ -1387,7 +1256,6 @@ button {
   background: #fff;
   box-shadow: 0 3px 16px #00000005;
 }
-
 .benefits>div {
   display: flex;
   align-items: center;
@@ -1418,19 +1286,15 @@ button {
   color: var(--muted);
   margin-top: 2px;
 }
-
-
 .section {
   padding-top: 27px;
 }
-
 .section-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
 }
-
 .section h2,
 .newsletter h2 {
   font-family: "Playfair Display", serif;
@@ -1482,33 +1346,24 @@ button {
   display: block;
   object-fit: cover;
 }
-
 /* Heart */
-
 .heart {
   position: absolute;
   top: 14px;
   right: 14px;
   z-index: 5;
-
   width: 38px;
   height: 38px;
-
   border: none;
   border-radius: 50%;
-
   background: rgba(255, 255, 255, 0.95);
   color: #293426;
-
   font-size: 22px;
   line-height: 38px;
-
   cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition: all 0.3s ease;
 }
 
@@ -1524,11 +1379,9 @@ button {
 .product-info {
   min-height: 105px;
   padding: 18px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   gap: 15px;
   background: #fff;
 }
@@ -1542,19 +1395,15 @@ button {
 
 .product-details span {
   color: #52564b;
-
   font-size: 13px;
   font-weight: 600;
-
   line-height: 1.4;
 }
 
 .product-details b {
   color: #293426;
-
   font-size: 17px;
   font-weight: 700;
-
   white-space: nowrap;
 }
 
@@ -1564,64 +1413,45 @@ button {
 
 .buy-btn {
   flex-shrink: 0;
-
   min-width: 105px;
   height: 42px;
-
   padding: 0 14px;
-
   border: none;
   border-radius: 5px;
-
   background: #293426;
   color: #fff;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   gap: 7px;
-
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
-
   cursor: pointer;
-
   text-decoration: none;
-
   transition: all 0.3s ease;
 }
-
 .buy-btn i {
   font-size: 13px;
 }
-
 .buy-btn:hover {
   background: #0b2d1d;
   color: #fff;
-
   transform: translateY(-2px);
 }
-
 /* =========================
    FEATURED CARD
 ========================= */
-
 .product-card.featured {
   border: 1px solid #c9bfa6;
 }
-
 /* =========================
    MOBILE
 ========================= */
-
 @media (max-width: 575px) {
-
   .product-card img {
     height: 260px;
   }
-
   .product-info {
     padding: 15px;
     min-height: 95px;
@@ -1642,7 +1472,7 @@ button {
     font-size: 11px;
   }
 }
-/*----choose container--*/
+
 
 .choose .container{
   margin-top: 29px;
