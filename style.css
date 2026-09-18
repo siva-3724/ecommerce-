@@ -628,6 +628,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Playfair Display", serif;
 }
 
 html {
@@ -635,7 +636,7 @@ html {
 }
 
 body {
-  font-family: "DM Sans", Arial, sans-serif;
+font-family: "Playfair Display", serif;
   background: #fff;
   color: var(--text);
   line-height: 1.5;
@@ -845,7 +846,6 @@ button {
 /* =====================================
    CART COUNT
 ===================================== */
-
 .cart-count {
   position: absolute;
   top: -5px;
@@ -2088,7 +2088,7 @@ button {
 .payments {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap ;
   gap: 6px;
   margin-top: 10px;
 }
