@@ -2,7 +2,8 @@
 # 🌿 SIVA & HERB OILS
 
 **SIVA & HERB OILS** is a premium natural oil and fragrance e-commerce website designed to showcase traditional, botanical, and herbal oil products through a modern and responsive interface.
-![Uploading Screenshot 2026-09-18 113330.png…]()
+<img width="1920" height="4335" alt="Screenshot 2026-09-18 113330" src="https://github.com/user-attachments/assets/0da438f0-25a2-4d0f-a7f4-4523a5485e22" />
+
 
 
 ## ✨ About the Project
