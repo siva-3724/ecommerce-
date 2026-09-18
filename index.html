@@ -17,17 +17,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <!---loading text-->
 
-
-
-
   <!---navbar-->
   <header class="site-header">
     <div class="container nav">
 
       <!-- Mobile Menu -->
-      <button class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">
+      <div class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">
         ☰
-      </button>
+      </div>
 
       <!-- Logo -->
       <a href="#home" class="brand">
@@ -45,24 +42,32 @@
       <!-- Navigation Actions -->
       <div class="nav-actions">
 
-        <div class="topnav">
-          <div class="search-container">
-            <form action="">
-              <input type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-          </div>
+        <!-- Search -->
+        <div class="search-container">
+          <form action="" class="search-form">
+
+            <input type="text" name="search" placeholder="Search..." aria-label="Search">
+
+            <button type="submit" aria-label="Search">
+              <i class="fa fa-search"></i>
+            </button>
+
+          </form>
         </div>
 
 
+        <!-- Cart -->
+        <a href="add to card .html" class="cart-link" aria-label="Shopping Cart">
 
-        <a href="add to card .html">
-          <button>
-            🛒<span>3</span>
-          </button>
+          <i class="fa-solid fa-cart-shopping"></i>
+
+          <span class="cart-count">3</span>
+
         </a>
 
       </div>
+
+
 
     </div>
   </header>
@@ -522,6 +527,186 @@
       </section>
 
   </main>
+
+
+
+  <!-- CUSTOMER REVIEWS -->
+  <section class="reviews-section">
+
+    <div class="container">
+
+      <div class="review-heading text-center">
+        <h1>Customer Reviews</h1>
+        <p>
+          Discover what our customers say about their experience with
+          SIVA &amp; HERB OILS.
+        </p>
+      </div>
+
+      <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <!-- SLIDE 1 -->
+          <div class="carousel-item active">
+
+            <div class="row g-4 justify-content-center">
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="review-card">
+
+                  <h3>Amazing Quality &amp; Fragrance</h3>
+
+                  <div class="stars">★★★★★</div>
+
+                  <p>
+                    “I really loved the quality of the herbal oil.
+                    It feels natural, has a pleasant fragrance, and
+                    makes my hair feel soft and healthy.”
+                  </p>
+
+                  <span>— Priya S.</span>
+
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="review-card">
+
+                  <h3>Feels Completely Natural</h3>
+
+                  <div class="stars">★★★★★</div>
+
+                  <p>
+                    “The oil has a smooth texture and doesn’t feel too
+                    heavy. I’ve been using it regularly and really enjoy
+                    the traditional herbal feel.”
+                  </p>
+
+                  <span>— Arun K.</span>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- SLIDE 2 -->
+          <div class="carousel-item">
+
+            <div class="row g-4 justify-content-center">
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="review-card">
+
+                  <h3>Great Product for Regular Use</h3>
+
+                  <div class="stars">★★★★★</div>
+
+                  <p>
+                    “I ordered the Amla &amp; Brahmi oil and was impressed
+                    with the packaging and quality. It has become part of
+                    my weekly hair-care routine.”
+                  </p>
+
+                  <span>— Meena R.</span>
+
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="review-card">
+
+                  <h3>Beautiful Packaging</h3>
+
+                  <div class="stars">★★★★★</div>
+
+                  <p>
+                    “The product arrived neatly packed and looked exactly
+                    as shown. The herbal fragrance is very pleasant.”
+                  </p>
+
+                  <span>— Karthik M.</span>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- SLIDE 3 -->
+          <div class="carousel-item">
+
+            <div class="row g-4 justify-content-center">
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="review-card">
+
+                  <h3>A Wonderful Traditional Touch</h3>
+
+                  <div class="stars">★★★★★</div>
+
+                  <p>
+                    “I like that the product focuses on botanical
+                    ingredients and traditional oil-making inspiration.
+                    The overall experience has been excellent.”
+                  </p>
+
+                  <span>— Divya P.</span>
+
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="review-card">
+
+                  <h3>Feels Natural</h3>
+
+                  <div class="stars">★★★★★</div>
+
+                  <p>
+                    “I was impressed with the natural ingredients and
+                    traditional feel of the product. The packaging was
+                    also neat and attractive.”
+                  </p>
+
+                  <span>— Prasanth S.</span>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- PREVIOUS BUTTON -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+
+        </button>
+
+
+        <!-- NEXT BUTTON -->
+        <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
   <!--faq---->
   <section class="faq" id="faq">
 

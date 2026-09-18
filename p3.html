@@ -34,9 +34,9 @@
         <div class="container nav">
 
             <!-- Mobile Menu -->
-            <button class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">
+            <div class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">
                 ☰
-            </button>
+            </div>
 
             <!-- Logo -->
             <a href="#home" class="brand">
@@ -53,19 +53,28 @@
 
             <!-- Navigation Actions -->
             <div class="nav-actions">
-                <div class="topnav">
-                    <div class="search-container">
-                        <form action="">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
+
+                <!-- Search -->
+                <div class="search-container">
+                    <form action="" class="search-form">
+
+                        <input type="text" name="search" placeholder="Search..." aria-label="Search">
+
+                        <button type="submit" aria-label="Search">
+                            <i class="fa fa-search"></i>
+                        </button>
+
+                    </form>
                 </div>
-                <a href="add to card .html">
-                    <button>
-                        🛒
-                        <span>3</span>
-                    </button>
+
+
+                <!-- Cart -->
+                <a href="add to card .html" class="cart-link" aria-label="Shopping Cart">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span class="cart-count">3</span>
+
                 </a>
 
             </div>

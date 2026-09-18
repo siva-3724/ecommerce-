@@ -13,7 +13,6 @@
   --radius: 18px;
   --max: 1280px;
 }
-
 /* =========================================================
    BACKGROUND SHAKING LEAVES
  ========================================================= */
@@ -776,43 +775,258 @@ button {
 
 /* Navigation Actions */
 
-.site-header .nav-actions {
+
+/* =====================================
+   NAV ACTIONS
+===================================== */
+
+.nav-actions {
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  gap: 14px;
 
-  margin-left: 0;
   flex-shrink: 0;
 }
 
-/* Icon Buttons */
 
-.site-header .icon-btn {
-  width: 35px;
-  height: 35px;
+/* =====================================
+   SEARCH
+===================================== */
 
-  display: grid;
-  place-items: center;
+.search-container {
+  display: flex;
+  align-items: center;
+}
 
-  border: 0;
-  border-radius: 50%;
+.search-form {
+  width: 210px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #ddd;
+  border-radius: 25px;
+
+  background: #fff;
+
+  overflow: hidden;
+
+  transition: 0.3s ease;
+}
+
+.search-form:focus-within {
+  border-color: blueviolet;
+
+  box-shadow:
+    0 0 0 3px rgba(138, 43, 226, 0.10);
+}
+
+
+/* Search input */
+
+.search-form input {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 13px;
+
+  border: none;
+  outline: none;
 
   background: transparent;
 
-  color: var(--green);
-  font-size: 18px;
+  color: #333;
+  font-size: 14px;
+}
+
+.search-form input::placeholder {
+  color: #999;
+}
+
+
+/* Search button */
+
+.search-form button {
+  width: 42px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  background: transparent;
+
+  color: #555;
 
   cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.search-form button:hover {
+  color: blueviolet;
+}
+
+
+/* =====================================
+   CART
+===================================== */
+
+.cart-link {
+  position: relative;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f7f1fb;
+
+  color: #333;
+
+  text-decoration: none;
 
   transition: all 0.3s ease;
 }
 
-.site-header .icon-btn:hover {
-  background: var(--soft);
-  transform: translateY(-1px);
+
+/* Cart icon */
+
+.cart-link i {
+  font-size: 17px;
 }
 
-/* Cart */
+
+/* Cart hover */
+
+.cart-link:hover {
+  background:  #2C4A3E;
+  color: #fff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================
+   CART COUNT
+===================================== */
+
+.cart-count {
+  position: absolute;
+
+  top: -5px;
+  right: -5px;
+
+  width: 19px;
+  height: 19px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #c69d36;
+  color: #fff;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  border: 2px solid #fff;
+}
+
+
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 850px) {
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  /* Search becomes icon */
+
+  .search-form {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #f7f1fb;
+  }
+
+  .search-form input {
+    display: none;
+  }
+
+  .search-form button {
+    width: 42px;
+    height: 42px;
+
+    color: #333;
+  }
+
+  .search-form button:hover {
+    color:  #2C4A3E;
+  }
+
+  /* Cart */
+
+  .cart-link {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+
+  .nav-actions {
+    gap: 6px;
+  }
+
+  .search-form,
+  .search-form button,
+  .cart-link {
+    width: 38px;
+    height: 38px;
+  }
+
+  .search-form button {
+    font-size: 14px;
+  }
+
+  .cart-link i {
+    font-size: 15px;
+  }
+
+  .cart-count {
+    width: 17px;
+    height: 17px;
+
+    top: -4px;
+    right: -4px;
+
+    font-size: 9px;
+  }
+}
 
 
 /* Mobile Button */
@@ -885,8 +1099,6 @@ button {
     margin: 0;
 
     background: #fff;
-
-    box-shadow: 0 10px 25px rgba(20, 45, 30, 0.08);
 
     z-index: 9999;
   }
@@ -1636,6 +1848,157 @@ button {
       color: #c5c9bd;
       font-size: 12px;
     }
+
+/* ================================
+   CUSTOMER REVIEWS
+================================ */
+
+.reviews-section {
+  padding: 80px 20px;
+  background: #faf8f4;
+  overflow: hidden;
+}
+
+.review-heading {
+  max-width: 750px;
+  margin: 0 auto 45px;
+}
+
+.review-heading h1 {
+  margin-bottom: 15px;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: blueviolet;
+}
+
+.review-heading p {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+}
+/* REVIEW CARD */
+.review-card {
+  height: 100%;
+  min-height: 280px;
+  padding: 35px 30px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e2d9c8;
+  border-radius: 0px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+/* TITLE */
+.review-card h3 {
+  margin-bottom: 15px;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3d214f;
+}
+/* STARS */
+.review-card .stars {
+  margin-bottom: 18px;
+  color: #c69d36;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+/* REVIEW TEXT */
+.review-card p {
+  max-width: 520px;
+  margin: 0 auto 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+/* CUSTOMER NAME */
+
+.review-card span {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #3d214f;
+}
+/* CAROUSEL */
+#reviewCarousel {
+  position: relative;
+  padding: 0 70px 20px;
+}
+#reviewCarousel .carousel-inner {
+  overflow: visible;
+}
+/* CAROUSEL BUTTONS */
+#reviewCarousel .carousel-control-prev,
+#reviewCarousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background:  #2C4A3E;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+#reviewCarousel .carousel-control-prev {
+  left: 5px;
+}
+
+#reviewCarousel .carousel-control-next {
+  right: 5px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .reviews-section {
+    padding: 60px 15px;
+  }
+
+  .review-heading {
+    margin-bottom: 30px;
+  }
+
+  .review-heading h1 {
+    font-size: 32px;
+  }
+
+  .review-heading p {
+    font-size: 15px;
+  }
+
+  #reviewCarousel {
+    padding: 0 5px 20px;
+  }
+
+  .review-card {
+    min-height: auto;
+    padding: 28px 20px;
+  }
+
+  .review-card h3 {
+    font-size: 20px;
+  }
+
+  .review-card p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  #reviewCarousel .carousel-control-prev,
+  #reviewCarousel .carousel-control-next {
+    display: none;
+  }
+}
 
     /* =========================
        RESPONSIVE

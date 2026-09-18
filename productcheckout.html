@@ -205,9 +205,9 @@
     <div class="container nav">
 
       <!-- Mobile Menu -->
-      <button class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">
+      <div class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">
         ☰
-      </button>
+      </div>
 
       <!-- Logo -->
       <a href="#home" class="brand">
@@ -223,16 +223,31 @@
       </nav>
 
       <!-- Navigation Actions -->
-      <div class="nav-actions">
+        <div class="nav-actions">
+
+        <!-- Search -->
+        <div class="search-container">
+          <form action="" class="search-form">
+
+            <input type="text" name="search" placeholder="Search..." aria-label="Search">
+
+            <button type="submit" aria-label="Search">
+              <i class="fa fa-search"></i>
+            </button>
+
+          </form>
+        </div>
 
 
+        <!-- Cart -->
+        <a href="add to card .html" class="cart-link" aria-label="Shopping Cart">
 
+          <div class="icon">
+            🛒
+          </div>
 
+          <span class="cart-count">3</span>
 
-        <a href="add to card .html">
-          <button>
-            🛒<span>3</span>
-          </button>
         </a>
 
       </div>
@@ -240,14 +255,15 @@
     </div>
  
   <header class="header">
-    <div class="icon-btn">
-<button type="button">
+    
+    <button type="button">
 
       <a href="p1.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5985E1">
         <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" /> </svg></a>
         </button>
-       <h1>Product Checkout
-    </h1>
+
+       <h1>Product Checkout</h1>
+   
   </header>
 
   <main class="checkout-container">

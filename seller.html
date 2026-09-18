@@ -7,30 +7,24 @@
   <title>process oil-making </title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="oilmake.css">
-
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
     rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 </head>
 
 <body>
   <header class="site-header">
     <div class="container nav">
-
       <!-- Mobile Menu -->
-      <button class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">
+      <div class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">
         ☰
-      </button>
-
+      </div>
       <!-- Logo -->
       <a href="#home" class="brand">
         SIVA & HERB OILS
@@ -47,28 +41,34 @@
       <!-- Navigation Actions -->
       <div class="nav-actions">
 
-        <div class="topnav">
-          <div class="search-container">
-            <form action="">
-              <input type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-          </div>
+        <!-- Search -->
+        <div class="search-container">
+          <form action="" class="search-form">
+
+            <input type="text" name="search" placeholder="Search..." aria-label="Search">
+
+            <button type="submit" aria-label="Search">
+              <i class="fa fa-search"></i>
+            </button>
+
+          </form>
         </div>
 
 
-        <a href="add to card .html">
-        <button>
-          🛒<span>3</span>
-        </button>
+        <!-- Cart -->
+        <a href="add to card .html" class="cart-link" aria-label="Shopping Cart">
+
+          <i class="fa-solid fa-cart-shopping"></i>
+
+          <span class="cart-count">3</span>
+
         </a>
 
-
       </div>
-      </div>
-      </header>
+    </div>
+  </header>
 
-  
+
   <!---process making-->
   <!--step 1-->
   <main id="home">
